@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-bg-color: #7338c1;
+  --btn-color: #12b0e8;
+  --active-link-color: #0008a8;
+}
+
+/* navbar which comes under header tag ------------------------------------------------------------------ */
+header {
+  background-color: var(--header-bg-color);
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+
+.nav-items ul li {
+  list-style-type: none;
+}
+
+.nav-items ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.nav-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--btn-color);
+}
+#active-link {
+  color: var(--active-link-color);
+  text-decoration: underline;
+}
+/* hero section which comes under header tag ------------------------------------------------------------*/
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem;
+  padding-top: 1rem;
+}
+
+.hero-img {
+  width: 40rem;
+}
+
+.section-content {
+  width: 70%;
+  padding-left: 0rem;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.section-content h1 {
+  font-size: 3rem;
+  width: 68%;
+}
+
+.section-content p {
+  width: 78%;
+  margin-top: 3rem;
+}
+
+/* saas content section ------------------------------------------------------------------------ */
+
+.saas-content {
+  color: #000;
+}
+
+.bullet-point h3 {
+  margin-top: 1.3rem;
+}
+.saas-content h2 {
+  font-size: 2rem;
+}
+.bullet-point p {
+  margin-top: 1rem;
+}
+
+.fa {
+  margin-right: 0.4rem;
+}
+
+.i1 {
+  color: var(--btn-color);
+}
+.i2 {
+  color: #5ced5c;
+}
+.i3 {
+  color: #e86b12;
+}
+
+/* cards section ----------------------------------------------------------------------------- */
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 4rem;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 9px 0 10px 0px rgb(0 0 0 / 40%);
+}
+.card img {
+  width: 4rem;
+}
+
+.img-container {
+  background-color: blueviolet;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem 0rem;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  width: 50%;
+}
+
+/* .card-content {
+  background-color: var(--header-bg-color);
+  border-radius: 10px;
+  width: 29%;
+  text-align: center;
+  color: #fff;
+} */
+.handp {
+  background-color: var(--header-bg-color);
+  height: 12.7rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.card-active {
+  height: 23.6rem;
+  padding: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 9px 0 10px 0px rgb(0 0 0 / 40%);
+  width: 56rem;
+}
+.handp h4,
+.handp p {
+  color: #fff;
+}
