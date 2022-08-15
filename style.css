@@ -16,6 +16,10 @@ header {
   padding: 2rem;
 }
 
+.sm-display {
+  display: none;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -199,4 +203,138 @@ nav {
 .handp h4,
 .handp p {
   color: #fff;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 12px;
+  }
+
+  .display {
+    display: none;
+  }
+
+  .sm-display {
+    display: flex;
+    justify-content: space-around;
+    gap: 16rem;
+  }
+
+  .sm-nav-btn {
+    width: 15rem;
+  }
+
+  .sm-display i {
+    font-size: 2rem;
+  }
+
+  header {
+    height: 100vh;
+    background: linear-gradient(45deg, black, #7338c1cf);
+  }
+
+  .hero-section {
+    position: relative;
+    height: 39rem;
+  }
+
+  .section-content {
+    width: 100%;
+  }
+
+  .hero-img-container {
+    position: absolute;
+    top: 2rem;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .saas {
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .saas .sm-hero-img-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .saas .hero-img {
+    width: 25rem;
+  }
+
+  .saas .saas-content {
+    text-align: center;
+  }
+
+  .saas .saas-content .bullet-point p {
+    margin: 0 auto;
+    margin-top: 0.6rem;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+  }
+
+  .card p {
+    margin: 0rem 2rem;
+  }
+
+  .card-section {
+    margin-top: 5rem;
+  }
+
+  .card-heading {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .display {
+    display: flex;
+    gap: 8rem;
+  }
+
+  .sm-display {
+    display: none;
+  }
+  .section-content {
+    width: 60%;
+  }
+  .hero-img-container {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    z-index: -1;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-img {
+    width: 25rem;
+  }
+  .hero-img-container {
+    position: absolute;
+    top: 25rem;
+    right: 4rem;
+    z-index: -1;
+    overflow: hidden;
+  }
+  header {
+    height: 100vh;
+    background: linear-gradient(45deg, black, #7338c1ba);
+  }
+  .saas .hero-img-container {
+    top: 0rem;
+    right: 0rem;
+  }
+
+  .saas {
+    gap: 0rem;
+  }
 }
