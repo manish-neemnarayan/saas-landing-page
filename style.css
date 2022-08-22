@@ -89,7 +89,12 @@ nav {
   width: 78%;
   margin-top: 3rem;
 }
-
+.hero-img-container {
+  position: relative;
+  top: 0;
+  z-index: 1;
+  overflow: visible;
+}
 /* saas content section ------------------------------------------------------------------------ */
 
 .saas-content {
@@ -251,6 +256,7 @@ nav {
     overflow: hidden;
   }
 
+
   .saas {
     flex-wrap: wrap;
     height: 100vh;
@@ -305,13 +311,7 @@ nav {
   .section-content {
     width: 60%;
   }
-  .hero-img-container {
-    position: absolute;
-    top: 2rem;
-    right: 4rem;
-    z-index: -1;
-    overflow: hidden;
-  }
+ 
 }
 
 @media screen and (max-width: 450px) {
